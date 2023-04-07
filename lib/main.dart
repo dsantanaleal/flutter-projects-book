@@ -33,6 +33,10 @@ class MyApp extends StatelessWidget {
               Image.network(
                   'https://images.freeimages.com/images/large-previews/eaa/the-beach-1464354.jpg',
                 height: 350,
+              ),
+              ElevatedButton(
+                child: Text("Contact Us"),
+                onPressed: () => true,
               )
             ],
           )
