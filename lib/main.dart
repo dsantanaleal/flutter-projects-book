@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.deepPurple,
         ),
         body: Builder(
-          builder: (context) => Padding(
+          builder: (context) => SingleChildScrollView(child: Padding(
             padding: EdgeInsets.all(20),
             child: Center(
               child: Column(
@@ -46,7 +46,7 @@ class MyApp extends StatelessWidget {
                 ],
               )
             ),
-          )
+          ))
         )
       ),
     );
