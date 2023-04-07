@@ -13,13 +13,28 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.deepPurple,
         ),
         body: Center(
-          child: Text(
-            "Hello World Travel",
-            style: TextStyle(
-              fontSize: 26,
-              fontWeight: FontWeight.bold,
-              color: Colors.blue[800]
-            ),
+          child: Column(
+            children: [
+              Text(
+                "Hello World Travel",
+                style: TextStyle(
+                    fontSize: 26,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.blue[800]
+                ),
+              ),
+              Text(
+                "Discover the World",
+                style: TextStyle(
+                  fontSize: 20,
+                  color: Colors.deepPurpleAccent
+                )
+              ),
+              Image.network(
+                  'https://images.freeimages.com/images/large-previews/eaa/the-beach-1464354.jpg',
+                height: 350,
+              )
+            ],
           )
         ),
       ),
